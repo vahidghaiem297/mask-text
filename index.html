@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Svg Mask</title>
+</head>
+
+<body>
+
+
+
+    <section class="svgSec">
+        <video class="vid-watch img-mosk picture-mosk" width="100%" preload="auto" playsinline="" autoplay="" loop=""
+            muted="" height="">
+            <source src="img/ForBiggerBlazes.mp4" type="video/mp4">
+        </video>
+
+        <svg width="100%" height="100%">
+            <defs>
+                <mask id="mask" x="0" y="0" width="100%" height="100%">
+                    <rect x="0" y="0" width="100%" height="100%" />
+                    <text x="50%" y="50%" fill="red" text-anchor="middle">OCEAN</text>
+                </mask>
+            </defs>
+            <rect x="0" y="0" width="100%" height="100%" />
+        </svg>
+
+
+    </section>
+
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
